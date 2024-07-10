@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {box-sizing:border-box;
+}
+
+body {
+    margin: 0;
+    width:100vw;
+    height: 100vh;
+  background-image: url(https://wallpaperset.com/w/full/5/1/1/90592.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h1{
+    position: absolute;
+  left: 700px;
+  top:150px;
+  color: white;
+}
+.fa-youtube-play{
+  position: relative;
+  left: 650px;
+  top:165px;
+}
+input[type=text] {
+    width: 400px;
+    height: 50px;
+  padding: 7px;
+  font-size: 17px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  margin-right: 6px;
+  border:1.2px solid gray;
+  box-shadow: 1px 1px 1px 1px gray inset;
+  position: relative;
+  left: 500px;
+  top:200px;
+}
+input[type=text]:focus{
+    border: 2px solid rgb(83, 83, 245);
+    outline: none;
+    
+}
+.search-container .tooltiptext {
+  visibility: hidden;
+  background-color: rgb(54, 52, 52);
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+  padding: 5px 0;
+  position: relative;
+  z-index: 1;
+  left: 1000px;
+  top:200px;
+}
+
+.search-container:hover .tooltiptext {
+  visibility: visible;
+}
+.search-container button {
+    width:40px ;
+    height: 50px;
+  padding: 8.9px;
+  margin-left: -10px;
+  background: #ddd;
+  font-size: 17px;
+  border:1px solid gray;
+  cursor: pointer;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: relative;
+  left: 500px;
+  top:200px;
+}
+.search-container button:hover {
+  background: #ccc;
+}
+</style>
+</head>
+<body>
+  <i class="fa fa-youtube-play" style="font-size:48px;color:red"></i>
+    <h1>YouTube</h1>
+  <div class="search-container">
+    <span class="tooltiptext">search</span>
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+  </div>
+</body>
+</html>
